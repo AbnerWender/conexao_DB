@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
 
 .card-funcionario{
     border: 1px solid #000;
@@ -12,4 +19,19 @@
     padding: 8px 16px;
     margin-left: 50px;
     margin-top: 50px;
+}
+
+#form-cadastro{
+    border: 1px solid #000;
+    width: max-content;
+    padding: 15px 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
 }

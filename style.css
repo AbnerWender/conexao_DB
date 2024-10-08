@@ -3,35 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
+ 
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
-} */
+    background-image: radial-gradient(circle, #487cac, #375b86, #263d62, #13213f, #000020);
+} 
+
+#secao-funcionario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .card-funcionario{
-    border: 1px solid #000;
     border-radius: 6px;
-    box-shadow: 1px 1px 1px #000036;
     width: max-content;
     padding: 8px 16px;
     margin-left: 50px;
     margin-top: 50px;
+    color: aliceblue;
+    
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 #form-cadastro{
-    border: 1px solid #000;
     width: max-content;
     padding: 15px 16px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 .row{
     display: flex;
     flex-direction: column;
+    color: aliceblue;
+}
+
+
+#secao-select{
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    padding: 5px;
+    color: aliceblue;
+}
+
+#mostrar{
+    padding: 2px;
+
 }

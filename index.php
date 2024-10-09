@@ -42,10 +42,10 @@
     <section id="secao-select">
         <form action="" id='select-todos' method="get">
             <label for="mostre-todos">Filtrar</label>
-            <select name="cargo" id="select-cargo">
+            <select name="select-cargo" id="select-cargo">
                 <option value="treinee">Treinee</option>
-                <option value="devJunior">Dev Junior</option>
-                <option value="devSenior">Dev Senior</option>
+                <option value="Dev Junior">Dev Junior</option>
+                <option value="DevSenior">Dev Senior</option>
             </select>
             <input type="submit" name="btn-mostrar" value="Mostrar" id="mostrar">
         </form>
@@ -73,21 +73,26 @@
 
         $conexao = mysqli_connect($servidor, $usuario, $senha, $banco_de_dados);
 
-        // if(isset($_GET['select-cargo'])){
-        // function renderTeamplate($funcionario){
-        //     include 'teamplate.php';
-        // };
+        // ESTA DANDO ERRO NA LINHA 86, NÃO CONSEGUI ENTENDER A TEMPO, MAS VOU TENTAR RESOLVER
 
-        // $cargo = $_GET['select-cargo'];
-        // $selectFiltro = $conexao->query('select * from funcionario where '$cargo' =   )');
+        // if(isset($_GET['select-cargo'])){
+        //     function renderTeamplate($funcionario){
+        //         include 'teamplate.php';
+        //     };
+
+        //     $cargo = $_GET['cargo'] 
+        //     $cargoFiltro = $_GET['select-cargo'];
+
+        //     $selectFiltro = $conexao->query('select * from funcionario where '$cargo' = '$cargoFiltro')');
+            
+        //     $rowsFuncionario = $selectTodos->fetch_all(MYSQLI_ASSOC);
         
-        // $rowsFuncionario = $selectTodos->fetch_all(MYSQLI_ASSOC);
-        
-        // $conexao->close();
-        
-        // foreach($rowsFuncionario as $funcionario){
-        //     renderTeamplate($funcionario);
-        // };}
+        //     foreach($rowsFuncionario as $funcionario){
+        //         renderTeamplate($funcionario);
+        //     };
+
+        //     $conexao->close();
+        // };
         
         $conexao = mysqli_connect($servidor, $usuario, $senha, $banco_de_dados);
 
@@ -105,7 +110,7 @@
             renderTeamplate($funcionario);
         };
 
-        ?>
+    ?>
 
         ?>
 
